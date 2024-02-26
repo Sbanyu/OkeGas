@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tmdb_primary">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:enableAutomaticInitialization="false"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageViewBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rounded_corner_exit"
+                    android:src="@drawable/ic_arrow_back"
+                    android:padding="6dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/youtubePlayerView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.detail.DetailActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_movie_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/movie_title"
+                            android:fontFamily="@font/jakartasans_bold"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:layout_alignParentTop="true"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_bintang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/tv_movie_title">
+
+                        <ImageView
+                            android:id="@+id/iv_bintang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/ic_half_star"
+                            android:contentDescription="@string/rating_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_vote_average"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_10_0"
+                            android:textSize="12sp"
+                            android:layout_marginEnd="12dp"
+                            android:textColor="@color/tmdb_secondary"
+                            android:fontFamily="@font/jakartasans_medium"/>
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_arrow_right"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_movie_release_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_toRightOf="@id/ll_bintang"
+                            android:text="@string/movie_release_date"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/jakartasans_medium"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_age_of_film"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:text="13+"
+                            android:textSize="12sp"
+                            android:textColor="@color/tmdb_secondary"
+                            android:fontFamily="@font/jakartasans_medium"
+                            android:background="@drawable/border_red"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="4dp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_negara_film"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:text="English"
+                            android:textSize="12sp"
+                            android:textColor="@color/tmdb_secondary"
+                            android:fontFamily="@font/jakartasans_medium"
+                            android:background="@drawable/border_red"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="4dp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/myButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subtitle"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/jakartasans_medium"
+                            android:textColor="@color/tmdb_secondary"
+                            android:background="@drawable/border_red"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="4dp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/ll_bintang"
+                        android:gravity="center_horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/bt_play_youtube"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/border_red_for_button"
+                            android:text="Play"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/jakartasans_bold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:drawableStart="@drawable/ic_button_play"
+                            android:paddingStart="60dp"
+                            android:paddingEnd="60dp"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="6dp"
+                            android:background="@drawable/border_red_for_download"
+                            android:text="Download"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/jakartasans_bold"
+                            android:textColor="@color/tmdb_secondary"
+                            android:textSize="14sp"
+                            android:drawableStart="@drawable/ic_download"
+                            android:paddingStart="40dp"
+                            android:paddingEnd="40dp"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_movie_desc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_title"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/jakartasans_bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_movie_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/tv_movie_desc"
+                    android:textColor="@color/white100"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_movie_review_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/movie_review_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jakartasans_bold"
+                    android:visibility="visible" />
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fcv_reviews"
+                    android:name="com.example.okegas.ui.review.ReviewFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/tmdb_primary"
+        android:src="@drawable/baseline_favorite_24"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

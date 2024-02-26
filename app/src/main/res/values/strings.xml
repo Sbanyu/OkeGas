@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">OkeGas</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular_movie">Popular Movie</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="movie_title">title</string>
+    <string name="movie_genre">genre</string>
+    <string name="movie_release_date">Release date</string>
+    <string name="description_title">Description</string>
+    <string name="tv_movie_desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac venenatis elit, at faucibus lectus. Etiam semper tristique elit, et posuere elit semper vitae. Ut facilisis arcu vitae lectus lobortis ultricies. Duis eu laoreet mi, et lobortis ex. Cras egestas odio at libero varius rhoncus. Vivamus mollis mauris urna, a mollis diam malesuada quis. Maecenas dapibus vel massa ac vulputate. Aenean rhoncus purus nec diam condimentum, quis tincidunt nunc mollis. Duis molestie iaculis nibh vitae scelerisque. Nam nisi enim, venenatis id molestie a, imperdiet tincidunt lacus. Sed augue nisl, mattis ut nisl at, fermentum convallis odio. Vivamus nec lorem sem.  "</string>
+    <string name="movie_review_title">Review</string>
+    <string name="author_name">Author Name</string>
+    <string name="created_at">Created at </string>
+    <string name="movie_review_created_at">2024-03-10T20:09:40.500Z</string>
+    <string name="_10_0">10.0</string>
+    <string name="favorite_title">Favorite</string>
+    <string name="share_title">share</string>
+    <string name="this_is_bottomsheetdialog">This is BottomSheetDialog</string>
+    <string name="share">Share</string>
+    <string name="tmdb_primary_logo">TMDB Primary Logo</string>
+    <string name="movie_placeholder">Movie placeholder</string>
+    <string name="settings_title">Settings</string>
+    <string name="about_title">About</string>
+    <string name="about_name">SBanyu</string>
+    <string name="about_uname">BanyuSantoso</string>
+    <string name="created_by">Created by</string>
+    <string name="powered_by">Powered by</string>
+    <string name="tmdb_title">The Movie Database API</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="released">Released on</string>
+    <string name="no_favorites_yet">No favorites yet!</string>
+    <string name="empty_favorites_illustration">Empty favorites illustration</string>
+    <string name="review_author_placeholder">Review author placeholder</string>
+    <string name="rating_icon">Rating icon</string>
+    <string name="no_rating">No rating</string>
+    <string name="no_reviews_yet">No reviews yet</string>
+    <string name="_200">200</string>
+    <string name="github_icon">Github icon</string>
+</resources>
