@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okegas Movie App</title>
-</head>
-<body>
-    <h1>Okegas Movie App</h1>
-    <p>Okegas Movie App adalah aplikasi Android sederhana yang memungkinkan pengguna untuk menelusuri daftar film populer, menonton trailer film, dan menambahkan film favorit ke daftar pribadi mereka.</p>
+# Okegas Movie App
+
+Okegas Movie App adalah aplikasi Android sederhana yang memungkinkan pengguna untuk menelusuri daftar film populer, menonton trailer film, dan menambahkan film favorit ke daftar pribadi mereka.
+
 
 ## Screenshots and Video Demo
 
@@ -20,43 +14,62 @@
 ### Screenshot 2
 ![Screenshot 2](Screenshot_20240227_001926.png)
 
-    <h2>Fitur</h2>
-    <ul>
-        <li>Menampilkan daftar film populer, top rated, dan sedang diputar.</li>
-        <li>Menampilkan detail film, termasuk sinopsis, rating, dan trailer jika tersedia.</li>
-        <li>Menambahkan dan menghapus film dari daftar favorit.</li>
-        <li>Menampilkan daftar film favorit pengguna.</li>
-        <li>Menjalankan trailer film menggunakan YouTube Player.</li>
-        <li>Pengaturan preferensi untuk mengatur tema aplikasi.</li>
-    </ul>
+## Fitur
 
-    <h2>Library yang Digunakan</h2>
-    <ul>
-        <li>AndroidX Libraries</li>
-        <li>Glide</li>
-        <li>Mediarouter</li>
-        <li>Lifecycle</li>
-        <li>Navigation</li>
-        <li>Retrofit</li>
-        <li>Room</li>
-        <li>Coroutines</li>
-        <li>YouTube Player</li>
-    </ul>
+- Menampilkan daftar film populer, top rated, dan sedang diputar.
+- Menampilkan detail film, termasuk sinopsis, rating, dan trailer jika tersedia.
+- Menambahkan dan menghapus film dari daftar favorit.
+- Menampilkan daftar film favorit pengguna.
+- Menjalankan trailer film menggunakan YouTube Player.
+- Pengaturan preferensi untuk mengatur tema aplikasi.
 
-    <h2>Cara Menjalankan Aplikasi</h2>
-    <ol>
-        <li>Clone repositori dari GitHub:</li>
-        <code>git clone https://github.com/username/okegas-movie-app.git</code>
-        <li>Buka proyek menggunakan Android Studio.</li>
-        <li>Sinkronkan proyek dengan dependensi menggunakan Gradle.</li>
-        <li>Atur pengaturan proyek jika diperlukan, seperti versi Android SDK dan versi Kotlin.</li>
-        <li>Bangun dan jalankan aplikasi pada perangkat fisik atau emulator.</li>
-    </ol>
+## Library yang Digunakan
 
-    <h2>Kontribusi</h2>
-    <p>Jika Anda ingin berkontribusi pada proyek ini, Anda bisa melakukan fork repositori ini, lakukan perubahan yang diinginkan, dan ajukan pull request.</p>
+- **AndroidX Libraries**
+  - Core KTX
+  - AppCompat
+  - Material Components
+  - Constraint Layout
+  - RecyclerView
+  - CardView
+  - Preference
 
-    <h2>Lisensi</h2>
-    <p>Proyek ini dilisensikan di bawah <a href="LICENSE">MIT License</a>.</p>
-</body>
-</html>
+- **Glide**: Library untuk memuat dan menampilkan gambar dengan efisien.
+  
+- **Mediarouter**: Library untuk menambahkan fitur tampilan layar ke perangkat.
+
+- **Lifecycle**: Library untuk mengelola siklus hidup komponen Android.
+
+- **Navigation**: Library untuk mengelola navigasi antar layar.
+
+- **Retrofit**: Library untuk mengonsumsi layanan web RESTful.
+
+- **Room**: Library untuk membuat dan mengelola basis data lokal.
+
+- **Coroutines**: Library untuk menangani pemrograman asinkron dan tugas berat secara mudah.
+
+- **YouTube Player**: Library untuk memutar video YouTube dalam aplikasi.
+
+## Cara Menjalankan Aplikasi
+
+1. Clone repositori dari GitHub:
+
+```
+git clone https://github.com/username/okegas-movie-app.git
+```
+
+2. Buka proyek menggunakan Android Studio.
+
+3. Sinkronkan proyek dengan dependensi menggunakan Gradle.
+
+4. Atur pengaturan proyek jika diperlukan, seperti versi Android SDK dan versi Kotlin.
+
+5. Bangun dan jalankan aplikasi pada perangkat fisik atau emulator.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, Anda bisa melakukan fork repositori ini, lakukan perubahan yang diinginkan, dan ajukan pull request.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
